@@ -1,0 +1,11 @@
+{
+  "status": "通过",
+  "checks": [
+    "对象事务新增且旧状态不变",
+    "逆Step撤销对象",
+    "纯Doc JSON回环",
+    "重复ID拒绝"
+  ],
+  "scope": "仅六个TS模块转译后Node执行；非完整构建、非公开Editor集成、非渲染或钢笔UI验证",
+  "typescript": "5.9.3"
+}
