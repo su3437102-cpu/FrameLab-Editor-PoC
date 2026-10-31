@@ -1,0 +1,1 @@
+Playwright runtime present. chromium.launch(headless=true) failed: executable missing at /root/.cache/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell. No browser interaction or screenshots captured. No screenshot placeholder is evidence.
