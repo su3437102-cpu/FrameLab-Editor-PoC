@@ -1,0 +1,16 @@
+{
+  "fixtures/expected-4.png": "2db473595aed8bf23a4ea7d08b26688a7c760e21a9e9b98a3244c81c8fa7d139",
+  "fixtures/expected-9.png": "25e3f11cf2a0e69c902383e4910e74412cddee4ced5319ecd0b29466c47561dc",
+  "fixtures/expected-5.png": "37d88af979527313d9d967bab731414a8e56879a273fe6a4f9f1136be044e0b6",
+  "fixtures/expected-7.png": "be313c975ed564f1c1f0aecc179c5a0a9c898573ea7f421b942ca821a90432c0",
+  "fixtures/expected-2.png": "4a734dc6f0ce1596693a3887bc9d8390d95e68ee1b07e87f19c6299d65f63d7e",
+  "fixtures/alpha-circle.png": "997508becc38b7b7d6f8188494cbb285fe340ddb99c7cef720648a644e72ae32",
+  "fixtures/grid-3240.jpg": "f23f7e97499d03b16a7b7b5cb1df5204212e79d412bcd3db6ec2bbeffa566d56",
+  "fixtures/expected-6.png": "6bcc3b8ba3f47ea9f3455eef6dc8297f216e018872f1da8174e0babc66f6fa56",
+  "fixtures/expected-8.png": "9a92125ce4a362d510267105bbdcd07b36e319046f8a7a3bdd6fc599990fca5d",
+  "fixtures/mask-gradient.png": "52391a5ad3fd4f1bc993bfc8517a84bd6ceae5fc09d52a73aa8fd0e7e5327db5",
+  "fixtures/grid-3240.png": "b3013d17cd02407091d1165bfc7c769531b803a26dd3e4879291a98c4fb36a42",
+  "fixtures/expected-1.png": "fc0348ffa44af9b91fb31f930ece4462f3e05af917c77318bc5099ef127ee841",
+  "fixtures/expected-3.png": "1b05dd382c21c0b549ae73741983bf85a721f7c8b6902269be830bd2718fdf16",
+  "fixtures/document-spec.json": "eb62fbb1edb40ef34d8a746928cc0fb53aac52f3b8350951e714db6baa0d2b6d"
+}
