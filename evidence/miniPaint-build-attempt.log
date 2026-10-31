@@ -1,0 +1,8 @@
+
+> miniPaint@4.14.3 build
+> webpack --mode production
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+sh: 1: webpack: not found
+
+exit=127
