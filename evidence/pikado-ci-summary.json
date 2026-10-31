@@ -1,0 +1,1638 @@
+{
+  "run_id": 41216165873,
+  "artifact_id": 13048820599,
+  "candidate_sha": "29f6d8902a91f089edc8b327ab311ffa44859023",
+  "passed": 3048,
+  "failed": 0,
+  "errors": 0,
+  "ms": 8492,
+  "page_errors": [],
+  "suites": [
+    {
+      "name": "core / document + layer tree",
+      "passed": 13,
+      "failed": 0,
+      "ms": 4
+    },
+    {
+      "name": "core / selection mask",
+      "passed": 18,
+      "failed": 0,
+      "ms": 8
+    },
+    {
+      "name": "core / selection contour tracing",
+      "passed": 17,
+      "failed": 0,
+      "ms": 12
+    },
+    {
+      "name": "core / history copy-on-write",
+      "passed": 14,
+      "failed": 0,
+      "ms": 4
+    },
+    {
+      "name": "core / blend mode table",
+      "passed": 14,
+      "failed": 0,
+      "ms": 0
+    },
+    {
+      "name": "core / colour conversions",
+      "passed": 23,
+      "failed": 0,
+      "ms": 1
+    },
+    {
+      "name": "core / canvas + image sizing",
+      "passed": 9,
+      "failed": 0,
+      "ms": 4
+    },
+    {
+      "name": "core / keyboard shortcuts are unique",
+      "passed": 5,
+      "failed": 0,
+      "ms": 2
+    },
+    {
+      "name": "core / history shares the selection mask instead of copying it",
+      "passed": 6,
+      "failed": 0,
+      "ms": 14
+    },
+    {
+      "name": "core / undo and redo still restore the right selection",
+      "passed": 5,
+      "failed": 0,
+      "ms": 3
+    },
+    {
+      "name": "core / beginEdit forks only the surface being written",
+      "passed": 5,
+      "failed": 0,
+      "ms": 2
+    },
+    {
+      "name": "core / memoryUse counts the derived caches too",
+      "passed": 4,
+      "failed": 0,
+      "ms": 3
+    },
+    {
+      "name": "core / a layer can hold its pixels compactly",
+      "passed": 12,
+      "failed": 0,
+      "ms": 6
+    },
+    {
+      "name": "core / compositing a compact layer matches the expanded one exactly",
+      "passed": 3,
+      "failed": 0,
+      "ms": 9
+    },
+    {
+      "name": "core / editing a compact layer keeps history correct",
+      "passed": 7,
+      "failed": 0,
+      "ms": 3
+    },
+    {
+      "name": "core / snapping finds the nearest line",
+      "passed": 5,
+      "failed": 0,
+      "ms": 1
+    },
+    {
+      "name": "core / snapping uses all three edges of the moving rectangle",
+      "passed": 3,
+      "failed": 0,
+      "ms": 0
+    },
+    {
+      "name": "core / snapping ranks guides above the grid",
+      "passed": 3,
+      "failed": 0,
+      "ms": 0
+    },
+    {
+      "name": "core / snapping reports the lines it matched",
+      "passed": 5,
+      "failed": 0,
+      "ms": 0
+    },
+    {
+      "name": "core / the snap tolerance is a screen distance, not a document one",
+      "passed": 8,
+      "failed": 0,
+      "ms": 0
+    },
+    {
+      "name": "core / dragging a layer snaps it to a guide",
+      "passed": 3,
+      "failed": 0,
+      "ms": 28
+    },
+    {
+      "name": "core / aligning against other layers does not expand them",
+      "passed": 2,
+      "failed": 0,
+      "ms": 69
+    },
+    {
+      "name": "core / dragging a guide snaps it to the document, not to itself",
+      "passed": 5,
+      "failed": 0,
+      "ms": 5
+    },
+    {
+      "name": "core / a transform handle lands where the cursor does",
+      "passed": 9,
+      "failed": 0,
+      "ms": 22
+    },
+    {
+      "name": "core / the other drag tools snap too",
+      "passed": 6,
+      "failed": 0,
+      "ms": 37
+    },
+    {
+      "name": "compositor / all 27 blend modes, exact",
+      "passed": 30,
+      "failed": 0,
+      "ms": 8
+    },
+    {
+      "name": "compositor / layer opacity vs fill opacity",
+      "passed": 8,
+      "failed": 0,
+      "ms": 6
+    },
+    {
+      "name": "compositor / layer masks",
+      "passed": 9,
+      "failed": 0,
+      "ms": 2
+    },
+    {
+      "name": "compositor / clipping masks",
+      "passed": 11,
+      "failed": 0,
+      "ms": 3
+    },
+    {
+      "name": "compositor / groups",
+      "passed": 15,
+      "failed": 0,
+      "ms": 4
+    },
+    {
+      "name": "compositor / adjustment layers",
+      "passed": 9,
+      "failed": 0,
+      "ms": 4
+    },
+    {
+      "name": "compositor / GPU blend path matches the CPU path",
+      "passed": 47,
+      "failed": 0,
+      "ms": 826
+    },
+    {
+      "name": "compositor / getComposite caching + blendOnto",
+      "passed": 10,
+      "failed": 0,
+      "ms": 2
+    },
+    {
+      "name": "paint / makeTip geometry",
+      "passed": 25,
+      "failed": 0,
+      "ms": 3
+    },
+    {
+      "name": "paint / PaintStroke lays colour on the path only",
+      "passed": 10,
+      "failed": 0,
+      "ms": 3
+    },
+    {
+      "name": "paint / opacity caps a stroke, flow builds within it",
+      "passed": 12,
+      "failed": 0,
+      "ms": 6
+    },
+    {
+      "name": "paint / erase, lockTransparency and selection clipping",
+      "passed": 11,
+      "failed": 0,
+      "ms": 6
+    },
+    {
+      "name": "paint / spacing controls the dab count",
+      "passed": 6,
+      "failed": 0,
+      "ms": 3
+    },
+    {
+      "name": "paint / EffectStroke blends the op through the tip",
+      "passed": 14,
+      "failed": 0,
+      "ms": 3
+    },
+    {
+      "name": "paint / brushFromOptions maps 0..100 onto 0..1",
+      "passed": 7,
+      "failed": 0,
+      "ms": 0
+    },
+    {
+      "name": "filters / registry integrity",
+      "passed": 17,
+      "failed": 0,
+      "ms": 7
+    },
+    {
+      "name": "filters / every filter runs at its defaults",
+      "passed": 64,
+      "failed": 0,
+      "ms": 316
+    },
+    {
+      "name": "filters / every filter survives extreme parameters",
+      "passed": 63,
+      "failed": 0,
+      "ms": 154
+    },
+    {
+      "name": "filters / offset is a pure pixel shift",
+      "passed": 5,
+      "failed": 0,
+      "ms": 0
+    },
+    {
+      "name": "filters / solarize maps a known ramp",
+      "passed": 2,
+      "failed": 0,
+      "ms": 0
+    },
+    {
+      "name": "filters / maximum and minimum are square morphology",
+      "passed": 5,
+      "failed": 0,
+      "ms": 1
+    },
+    {
+      "name": "filters / flat-field identities",
+      "passed": 7,
+      "failed": 0,
+      "ms": 0
+    },
+    {
+      "name": "filters / median removes salt and pepper",
+      "passed": 3,
+      "failed": 0,
+      "ms": 1
+    },
+    {
+      "name": "filters / mosaic honours its cell size",
+      "passed": 5,
+      "failed": 0,
+      "ms": 0
+    },
+    {
+      "name": "filters / gaussian blur",
+      "passed": 8,
+      "failed": 0,
+      "ms": 1
+    },
+    {
+      "name": "filters / seeded generators are deterministic",
+      "passed": 14,
+      "failed": 0,
+      "ms": 3
+    },
+    {
+      "name": "filters / runner honours the selection and history",
+      "passed": 22,
+      "failed": 0,
+      "ms": 58
+    },
+    {
+      "name": "filters / running the same filter twice is reproducible",
+      "passed": 2,
+      "failed": 0,
+      "ms": 67
+    },
+    {
+      "name": "adjustments / registry integrity",
+      "passed": 15,
+      "failed": 0,
+      "ms": 1
+    },
+    {
+      "name": "adjustments / shared LUT helpers",
+      "passed": 7,
+      "failed": 0,
+      "ms": 0
+    },
+    {
+      "name": "adjustments / every adjustment runs at defaults and extremes",
+      "passed": 49,
+      "failed": 0,
+      "ms": 78
+    },
+    {
+      "name": "adjustments / adjustments are pure functions",
+      "passed": 3,
+      "failed": 0,
+      "ms": 18
+    },
+    {
+      "name": "adjustments / invert, threshold, desaturate, posterize",
+      "passed": 20,
+      "failed": 0,
+      "ms": 1
+    },
+    {
+      "name": "adjustments / levels and curves",
+      "passed": 15,
+      "failed": 0,
+      "ms": 1
+    },
+    {
+      "name": "adjustments / brightness-contrast never darkens on a brightness lift",
+      "passed": 4,
+      "failed": 0,
+      "ms": 0
+    },
+    {
+      "name": "adjustments / hue-saturation and gradient-map",
+      "passed": 14,
+      "failed": 0,
+      "ms": 1
+    },
+    {
+      "name": "adjustments / auto tone, contrast and color",
+      "passed": 22,
+      "failed": 0,
+      "ms": 4
+    },
+    {
+      "name": "adjustments / composing two tables quantises once, not twice",
+      "passed": 7,
+      "failed": 0,
+      "ms": 1
+    },
+    {
+      "name": "adjustments / an unrounded table still applies to pixels correctly",
+      "passed": 3,
+      "failed": 0,
+      "ms": 0
+    },
+    {
+      "name": "layers / add, name, duplicate, delete",
+      "passed": 22,
+      "failed": 0,
+      "ms": 3
+    },
+    {
+      "name": "layers / group and ungroup preserve order and the composite",
+      "passed": 14,
+      "failed": 0,
+      "ms": 2
+    },
+    {
+      "name": "layers / mergeDown keeps the lower blend mode and the composite",
+      "passed": 11,
+      "failed": 0,
+      "ms": 2
+    },
+    {
+      "name": "layers / mergeSelected lands at the right depth",
+      "passed": 9,
+      "failed": 0,
+      "ms": 3
+    },
+    {
+      "name": "layers / mergeVisible and flattenImage",
+      "passed": 16,
+      "failed": 0,
+      "ms": 4
+    },
+    {
+      "name": "layers / layer masks",
+      "passed": 28,
+      "failed": 0,
+      "ms": 10
+    },
+    {
+      "name": "layers / adjustment layers and clipping",
+      "passed": 17,
+      "failed": 0,
+      "ms": 6
+    },
+    {
+      "name": "layers / rasterize, trim and the Background",
+      "passed": 26,
+      "failed": 0,
+      "ms": 6
+    },
+    {
+      "name": "layers / undo integrity sweep (20+ mixed operations)",
+      "passed": 165,
+      "failed": 0,
+      "ms": 44
+    },
+    {
+      "name": "effects / drop shadow",
+      "passed": 15,
+      "failed": 0,
+      "ms": 31
+    },
+    {
+      "name": "effects / inner shadow",
+      "passed": 16,
+      "failed": 0,
+      "ms": 10
+    },
+    {
+      "name": "effects / outer glow",
+      "passed": 10,
+      "failed": 0,
+      "ms": 22
+    },
+    {
+      "name": "effects / inner glow",
+      "passed": 12,
+      "failed": 0,
+      "ms": 14
+    },
+    {
+      "name": "effects / bevel and emboss",
+      "passed": 17,
+      "failed": 0,
+      "ms": 17
+    },
+    {
+      "name": "effects / satin",
+      "passed": 11,
+      "failed": 0,
+      "ms": 26
+    },
+    {
+      "name": "effects / colour, gradient and pattern overlays",
+      "passed": 25,
+      "failed": 0,
+      "ms": 17
+    },
+    {
+      "name": "effects / stroke",
+      "passed": 20,
+      "failed": 0,
+      "ms": 9
+    },
+    {
+      "name": "effects / bookkeeping and disabled effects",
+      "passed": 10,
+      "failed": 0,
+      "ms": 7
+    },
+    {
+      "name": "effects / below-effects blend against the real backdrop",
+      "passed": 6,
+      "failed": 0,
+      "ms": 6
+    },
+    {
+      "name": "effects / region cropping has no seam",
+      "passed": 20,
+      "failed": 0,
+      "ms": 73
+    },
+    {
+      "name": "effects / a tiny mark must keep its effects",
+      "passed": 6,
+      "failed": 0,
+      "ms": 22
+    },
+    {
+      "name": "effects / cropping declines for a full-canvas layer",
+      "passed": 9,
+      "failed": 0,
+      "ms": 3
+    },
+    {
+      "name": "text / rasterisation + font weight",
+      "passed": 18,
+      "failed": 0,
+      "ms": 13
+    },
+    {
+      "name": "text / size, colour, alignment, decoration",
+      "passed": 31,
+      "failed": 0,
+      "ms": 17
+    },
+    {
+      "name": "text / measureTextLayer + warp",
+      "passed": 17,
+      "failed": 0,
+      "ms": 24
+    },
+    {
+      "name": "vector / path geometry + hit testing",
+      "passed": 19,
+      "failed": 0,
+      "ms": 1
+    },
+    {
+      "name": "vector / path editing",
+      "passed": 21,
+      "failed": 0,
+      "ms": 2
+    },
+    {
+      "name": "vector / custom shape library",
+      "passed": 17,
+      "failed": 0,
+      "ms": 10
+    },
+    {
+      "name": "vector / rasterizeShapeLayer",
+      "passed": 21,
+      "failed": 0,
+      "ms": 2
+    },
+    {
+      "name": "vector / authored geometry survives document transforms",
+      "passed": 17,
+      "failed": 0,
+      "ms": 28
+    },
+    {
+      "name": "fonts / one id per family, whatever dialect wrote it",
+      "passed": 16,
+      "failed": 0,
+      "ms": 0
+    },
+    {
+      "name": "fonts / a stack always resolves, and substitutes in kind",
+      "passed": 6,
+      "failed": 0,
+      "ms": 0
+    },
+    {
+      "name": "fonts / the picker list covers what the layer actually uses",
+      "passed": 5,
+      "failed": 0,
+      "ms": 0
+    },
+    {
+      "name": "fonts / a css2 request asks only for weights the family has",
+      "passed": 7,
+      "failed": 0,
+      "ms": 0
+    },
+    {
+      "name": "fonts / only the Latin faces are downloaded",
+      "passed": 12,
+      "failed": 0,
+      "ms": 1
+    },
+    {
+      "name": "fonts / the bundled catalogue answers without a network",
+      "passed": 13,
+      "failed": 0,
+      "ms": 23
+    },
+    {
+      "name": "fonts / a PSD face is only claimed when the family has it",
+      "passed": 9,
+      "failed": 0,
+      "ms": 0
+    },
+    {
+      "name": "fonts / a project file names its fonts and carries none of them",
+      "passed": 9,
+      "failed": 0,
+      "ms": 27
+    },
+    {
+      "name": "fonts / a font that cannot be had substitutes rather than rewriting the layer",
+      "passed": 6,
+      "failed": 0,
+      "ms": 7
+    },
+    {
+      "name": "fonts / PSD export asks the manager what a downloaded family can do",
+      "passed": 1,
+      "failed": 0,
+      "ms": 1
+    },
+    {
+      "name": "io / .pkd lossless round trip",
+      "passed": 58,
+      "failed": 0,
+      "ms": 54
+    },
+    {
+      "name": "io / PSD round trip",
+      "passed": 55,
+      "failed": 0,
+      "ms": 41
+    },
+    {
+      "name": "io / GIF export",
+      "passed": 16,
+      "failed": 0,
+      "ms": 36
+    },
+    {
+      "name": "io / raster + SVG export",
+      "passed": 26,
+      "failed": 0,
+      "ms": 282
+    },
+    {
+      "name": "io / PSD font faces name a real file where one exists",
+      "passed": 11,
+      "failed": 0,
+      "ms": 1
+    },
+    {
+      "name": "io / PSD type layers survive their font, weight and slant",
+      "passed": 20,
+      "failed": 0,
+      "ms": 35
+    },
+    {
+      "name": "io / PSD live shapes keep the parameters a path cannot carry",
+      "passed": 18,
+      "failed": 0,
+      "ms": 40
+    },
+    {
+      "name": "io / PSD write -> read -> write is byte-identical",
+      "passed": 23,
+      "failed": 0,
+      "ms": 53
+    },
+    {
+      "name": "io / a PSD full of empty layers does not allocate a canvas for each",
+      "passed": 3,
+      "failed": 0,
+      "ms": 47
+    },
+    {
+      "name": "io / sharing a blank canvas cannot leak one layer's paint into another",
+      "passed": 4,
+      "failed": 0,
+      "ms": 16
+    },
+    {
+      "name": "io / an oversized PSD is offered flattened rather than opened blindly",
+      "passed": 8,
+      "failed": 0,
+      "ms": 32
+    },
+    {
+      "name": "io / memoryUse counts what is really held",
+      "passed": 1,
+      "failed": 0,
+      "ms": 1
+    },
+    {
+      "name": "io / adjustments Photoshop can actually read",
+      "passed": 33,
+      "failed": 0,
+      "ms": 21
+    },
+    {
+      "name": "io / reading a PSD the way another application would",
+      "passed": 3,
+      "failed": 0,
+      "ms": 3
+    },
+    {
+      "name": "io / 16-bit samples narrow correctly, and say that they did",
+      "passed": 11,
+      "failed": 0,
+      "ms": 12
+    },
+    {
+      "name": "io / opening a 16-bit file says the depth was lost",
+      "passed": 1,
+      "failed": 0,
+      "ms": 7
+    },
+    {
+      "name": "drop / a dragged image beats the link it sits in",
+      "passed": 3,
+      "failed": 0,
+      "ms": 1
+    },
+    {
+      "name": "drop / only schemes we are willing to fetch",
+      "passed": 6,
+      "failed": 0,
+      "ms": 0
+    },
+    {
+      "name": "drop / dragover opts in, or the drop never happens",
+      "passed": 5,
+      "failed": 0,
+      "ms": 0
+    },
+    {
+      "name": "drop / a dragged text selection is left alone",
+      "passed": 1,
+      "failed": 0,
+      "ms": 0
+    },
+    {
+      "name": "drop / an image dragged from another tab opens whole",
+      "passed": 4,
+      "failed": 0,
+      "ms": 64
+    },
+    {
+      "name": "drop / pasting an image larger than the canvas keeps all of it",
+      "passed": 6,
+      "failed": 0,
+      "ms": 2
+    },
+    {
+      "name": "drop / a paste that already fits still lands where it was copied",
+      "passed": 4,
+      "failed": 0,
+      "ms": 1
+    },
+    {
+      "name": "drop / a picture from another document arrives whole",
+      "passed": 7,
+      "failed": 0,
+      "ms": 3
+    },
+    {
+      "name": "drop / a dragged layer arrives at a size you can use",
+      "passed": 3,
+      "failed": 0,
+      "ms": 4
+    },
+    {
+      "name": "drop / a full-bleed layer is not needlessly recopied",
+      "passed": 3,
+      "failed": 0,
+      "ms": 1
+    },
+    {
+      "name": "drop / copying into another document leaves the source alone",
+      "passed": 6,
+      "failed": 0,
+      "ms": 2
+    },
+    {
+      "name": "drop / a tab lookup finds its document, and never the one dragged",
+      "passed": 6,
+      "failed": 0,
+      "ms": 1
+    },
+    {
+      "name": "drop / the drop target survives the tab bar rebuilding under it",
+      "passed": 6,
+      "failed": 0,
+      "ms": 3
+    },
+    {
+      "name": "drop / a locked Background can still be copied to another document",
+      "passed": 12,
+      "failed": 0,
+      "ms": 3
+    },
+    {
+      "name": "smart / conversion captures a real embedded document",
+      "passed": 20,
+      "failed": 0,
+      "ms": 4
+    },
+    {
+      "name": "smart / scaling down and back up is lossless",
+      "passed": 18,
+      "failed": 0,
+      "ms": 19
+    },
+    {
+      "name": "smart / smart filters stack, toggle and reorder",
+      "passed": 42,
+      "failed": 0,
+      "ms": 112
+    },
+    {
+      "name": "smart / undo and redo walk the filter stack and the transform",
+      "passed": 18,
+      "failed": 0,
+      "ms": 16
+    },
+    {
+      "name": "smart / a duplicate is linked, and can be made independent",
+      "passed": 16,
+      "failed": 0,
+      "ms": 18
+    },
+    {
+      "name": "smart / an unlinked copy is independent from the start",
+      "passed": 4,
+      "failed": 0,
+      "ms": 5
+    },
+    {
+      "name": "smart / editing the embedded source is picked up",
+      "passed": 5,
+      "failed": 0,
+      "ms": 5
+    },
+    {
+      "name": "smart / free transform is non-destructive on a smart layer",
+      "passed": 14,
+      "failed": 0,
+      "ms": 27
+    },
+    {
+      "name": "smart / rasterize bakes the render and drops the payload",
+      "passed": 9,
+      "failed": 0,
+      "ms": 15
+    },
+    {
+      "name": "smart / the matrix helpers are exact",
+      "passed": 9,
+      "failed": 0,
+      "ms": 1
+    },
+    {
+      "name": "smart / the warp grid starts neutral and interpolates",
+      "passed": 8,
+      "failed": 0,
+      "ms": 1
+    },
+    {
+      "name": "smart / perspective and warp are non-destructive",
+      "passed": 13,
+      "failed": 0,
+      "ms": 36
+    },
+    {
+      "name": "smart / Skew Y reads back as Skew Y",
+      "passed": 7,
+      "failed": 0,
+      "ms": 15
+    },
+    {
+      "name": "smart / editing linked contents updates every instance",
+      "passed": 7,
+      "failed": 0,
+      "ms": 4
+    },
+    {
+      "name": "smart / a link survives a save",
+      "passed": 5,
+      "failed": 0,
+      "ms": 27
+    },
+    {
+      "name": "liquify / every tool in the palette does its own job",
+      "passed": 14,
+      "failed": 0,
+      "ms": 10
+    },
+    {
+      "name": "liquify / pucker pulls in and bloat pushes out",
+      "passed": 3,
+      "failed": 0,
+      "ms": 21
+    },
+    {
+      "name": "liquify / the two twirls turn opposite ways",
+      "passed": 6,
+      "failed": 0,
+      "ms": 18
+    },
+    {
+      "name": "liquify / forward warp follows the drag",
+      "passed": 5,
+      "failed": 0,
+      "ms": 4
+    },
+    {
+      "name": "liquify / a frozen region cannot be moved at all",
+      "passed": 4,
+      "failed": 0,
+      "ms": 6
+    },
+    {
+      "name": "liquify / reconstruct undoes and smooth relaxes",
+      "passed": 3,
+      "failed": 0,
+      "ms": 11
+    },
+    {
+      "name": "liquify / face sliders move the feature they name and nothing else",
+      "passed": 19,
+      "failed": 0,
+      "ms": 3
+    },
+    {
+      "name": "channels / the view starts full and merges patches",
+      "passed": 8,
+      "failed": 0,
+      "ms": 1
+    },
+    {
+      "name": "channels / one channel alone shows as grey, two or more zero the rest",
+      "passed": 7,
+      "failed": 0,
+      "ms": 2
+    },
+    {
+      "name": "channels / applyChannelView only touches the context it is given",
+      "passed": 4,
+      "failed": 0,
+      "ms": 0
+    },
+    {
+      "name": "channels / hiding a channel changes the view and nothing else",
+      "passed": 6,
+      "failed": 0,
+      "ms": 31
+    },
+    {
+      "name": "channels / the view composite is cached but never stale",
+      "passed": 4,
+      "failed": 0,
+      "ms": 2
+    },
+    {
+      "name": "select / max flow agrees with Edmonds-Karp",
+      "passed": 3,
+      "failed": 0,
+      "ms": 56
+    },
+    {
+      "name": "select / the cut is closed under residual arcs",
+      "passed": 4,
+      "failed": 0,
+      "ms": 3
+    },
+    {
+      "name": "select / max flow finds the cut a grid is seeded with",
+      "passed": 4,
+      "failed": 0,
+      "ms": 17
+    },
+    {
+      "name": "select / saliency scores the unusual thing highest",
+      "passed": 3,
+      "failed": 0,
+      "ms": 12
+    },
+    {
+      "name": "select / GrabCut recovers a known shape",
+      "passed": 4,
+      "failed": 0,
+      "ms": 280
+    },
+    {
+      "name": "select / a high-frequency image still cuts sanely",
+      "passed": 4,
+      "failed": 0,
+      "ms": 151
+    },
+    {
+      "name": "select / a definite label is a hard constraint",
+      "passed": 1,
+      "failed": 0,
+      "ms": 333
+    },
+    {
+      "name": "select / degenerate images are handled, not divided by",
+      "passed": 3,
+      "failed": 0,
+      "ms": 3
+    },
+    {
+      "name": "select / the edge band follows the contour",
+      "passed": 4,
+      "failed": 0,
+      "ms": 10
+    },
+    {
+      "name": "select / feather softens without moving the boundary",
+      "passed": 7,
+      "failed": 0,
+      "ms": 9
+    },
+    {
+      "name": "select / shift edge is the control that moves the boundary",
+      "passed": 3,
+      "failed": 0,
+      "ms": 7
+    },
+    {
+      "name": "select / smooth removes speckle without eating the shape",
+      "passed": 2,
+      "failed": 0,
+      "ms": 6
+    },
+    {
+      "name": "select / matting recovers a soft edge the cut cannot",
+      "passed": 4,
+      "failed": 0,
+      "ms": 47
+    },
+    {
+      "name": "select / decontaminate pulls the fringe colour out",
+      "passed": 2,
+      "failed": 0,
+      "ms": 10
+    },
+    {
+      "name": "select / the refinement pipeline is neutral at its defaults",
+      "passed": 6,
+      "failed": 0,
+      "ms": 30
+    },
+    {
+      "name": "camera raw / registers as a filter, so it is also a smart filter",
+      "passed": 17,
+      "failed": 0,
+      "ms": 0
+    },
+    {
+      "name": "camera raw / the defaults are exactly the identity",
+      "passed": 5,
+      "failed": 0,
+      "ms": 4
+    },
+    {
+      "name": "camera raw / exposure is a stop of linear light",
+      "passed": 4,
+      "failed": 0,
+      "ms": 10
+    },
+    {
+      "name": "camera raw / temperature warms one way and cools the other",
+      "passed": 8,
+      "failed": 0,
+      "ms": 10
+    },
+    {
+      "name": "camera raw / each tone slider moves its own region",
+      "passed": 10,
+      "failed": 0,
+      "ms": 20
+    },
+    {
+      "name": "camera raw / the tone curve is well behaved across every slider",
+      "passed": 10,
+      "failed": 0,
+      "ms": 7
+    },
+    {
+      "name": "camera raw / contrast pivots on middle grey",
+      "passed": 5,
+      "failed": 0,
+      "ms": 13
+    },
+    {
+      "name": "camera raw / vibrance is not just saturation",
+      "passed": 4,
+      "failed": 0,
+      "ms": 28
+    },
+    {
+      "name": "camera raw / black and white is a channel mix",
+      "passed": 3,
+      "failed": 0,
+      "ms": 14
+    },
+    {
+      "name": "camera raw / the colour mixer works per band",
+      "passed": 4,
+      "failed": 0,
+      "ms": 7
+    },
+    {
+      "name": "camera raw / the colour bands are a partition of unity",
+      "passed": 13,
+      "failed": 0,
+      "ms": 3
+    },
+    {
+      "name": "camera raw / colour grading tints the ends separately",
+      "passed": 3,
+      "failed": 0,
+      "ms": 13
+    },
+    {
+      "name": "camera raw / clarity and sharpening raise local contrast",
+      "passed": 4,
+      "failed": 0,
+      "ms": 13
+    },
+    {
+      "name": "camera raw / noise reduction removes noise and keeps edges",
+      "passed": 5,
+      "failed": 0,
+      "ms": 29
+    },
+    {
+      "name": "camera raw / effects behave as named",
+      "passed": 14,
+      "failed": 0,
+      "ms": 30
+    },
+    {
+      "name": "camera raw / is non-destructive on a Smart Object",
+      "passed": 9,
+      "failed": 0,
+      "ms": 18
+    },
+    {
+      "name": "camera raw / negative dehaze veils towards the light, not the dark",
+      "passed": 8,
+      "failed": 0,
+      "ms": 1
+    },
+    {
+      "name": "camera raw / the tone curve has no kink at mid grey",
+      "passed": 9,
+      "failed": 0,
+      "ms": 1
+    },
+    {
+      "name": "camera raw / lifting near-black keeps its colour",
+      "passed": 20,
+      "failed": 0,
+      "ms": 0
+    },
+    {
+      "name": "animation / a timeline starts from the document as it stands",
+      "passed": 6,
+      "failed": 0,
+      "ms": 2
+    },
+    {
+      "name": "animation / frames record layer state, not pixels",
+      "passed": 11,
+      "failed": 0,
+      "ms": 1
+    },
+    {
+      "name": "animation / the identity rules a thumbnail cache depends on",
+      "passed": 5,
+      "failed": 0,
+      "ms": 1
+    },
+    {
+      "name": "animation / frames render differently",
+      "passed": 5,
+      "failed": 0,
+      "ms": 1
+    },
+    {
+      "name": "animation / editing the timeline",
+      "passed": 10,
+      "failed": 0,
+      "ms": 1
+    },
+    {
+      "name": "animation / tween interpolates opacity",
+      "passed": 7,
+      "failed": 0,
+      "ms": 3
+    },
+    {
+      "name": "animation / undo restores the timeline",
+      "passed": 8,
+      "failed": 0,
+      "ms": 1
+    },
+    {
+      "name": "animation / animated GIF decodes back frame for frame",
+      "passed": 9,
+      "failed": 0,
+      "ms": 20
+    },
+    {
+      "name": "animation / export animates when the document has a timeline",
+      "passed": 5,
+      "failed": 0,
+      "ms": 92
+    },
+    {
+      "name": "color / the profile matrices match published values",
+      "passed": 15,
+      "failed": 0,
+      "ms": 1
+    },
+    {
+      "name": "color / tone curves invert themselves",
+      "passed": 6,
+      "failed": 0,
+      "ms": 0
+    },
+    {
+      "name": "color / a transform to the same profile is the identity",
+      "passed": 7,
+      "failed": 0,
+      "ms": 1
+    },
+    {
+      "name": "color / white stays white and grey stays neutral",
+      "passed": 10,
+      "failed": 0,
+      "ms": 0
+    },
+    {
+      "name": "color / gamut behaviour is asymmetric, as it must be",
+      "passed": 7,
+      "failed": 0,
+      "ms": 0
+    },
+    {
+      "name": "color / rendering intents",
+      "passed": 7,
+      "failed": 0,
+      "ms": 0
+    },
+    {
+      "name": "color / grey profiles convert both ways",
+      "passed": 5,
+      "failed": 0,
+      "ms": 0
+    },
+    {
+      "name": "color / assign relabels, convert moves pixels",
+      "passed": 11,
+      "failed": 0,
+      "ms": 6
+    },
+    {
+      "name": "color / convert reaches rendered pixels, not just parameters",
+      "passed": 12,
+      "failed": 0,
+      "ms": 52
+    },
+    {
+      "name": "color / layer effect colours are converted too",
+      "passed": 2,
+      "failed": 0,
+      "ms": 4
+    },
+    {
+      "name": "color / a convert round trip through a wider space is near-lossless",
+      "passed": 2,
+      "failed": 0,
+      "ms": 18
+    },
+    {
+      "name": "color / soft proofing is a view and nothing more",
+      "passed": 12,
+      "failed": 0,
+      "ms": 21
+    },
+    {
+      "name": "color / the gamut warning marks what cannot be reproduced",
+      "passed": 3,
+      "failed": 0,
+      "ms": 6
+    },
+    {
+      "name": "color / the profile is part of the document, not just of the view",
+      "passed": 14,
+      "failed": 0,
+      "ms": 36
+    },
+    {
+      "name": "color / an opened photo is labelled with the space its pixels are in",
+      "passed": 12,
+      "failed": 0,
+      "ms": 81
+    },
+    {
+      "name": "color / grey profiles adapt their white point too",
+      "passed": 4,
+      "failed": 0,
+      "ms": 0
+    },
+    {
+      "name": "color / the ICC parser survives hostile bytes",
+      "passed": 21,
+      "failed": 0,
+      "ms": 5
+    },
+    {
+      "name": "color / the ICC parser reads real bytes",
+      "passed": 15,
+      "failed": 0,
+      "ms": 1
+    },
+    {
+      "name": "color / the commands are registered",
+      "passed": 9,
+      "failed": 0,
+      "ms": 1
+    },
+    {
+      "name": "colour / Convert to Profile handles every shape fill shape",
+      "passed": 6,
+      "failed": 0,
+      "ms": 7
+    },
+    {
+      "name": "color / a colour lookup table interpolates rather than snapping",
+      "passed": 7,
+      "failed": 0,
+      "ms": 1
+    },
+    {
+      "name": "color / Lab is decoded with the encoding its tag actually uses",
+      "passed": 6,
+      "failed": 0,
+      "ms": 0
+    },
+    {
+      "name": "color / a LUT profile is read, and can only be a source",
+      "passed": 7,
+      "failed": 0,
+      "ms": 1
+    },
+    {
+      "name": "color / an 8-bit LUT tag is read as well as a 16-bit one",
+      "passed": 2,
+      "failed": 0,
+      "ms": 1
+    },
+    {
+      "name": "color / a CMYK profile is read but not attached",
+      "passed": 4,
+      "failed": 0,
+      "ms": 0
+    },
+    {
+      "name": "apple formats / HEIC is told apart from AVIF by its brands",
+      "passed": 10,
+      "failed": 0,
+      "ms": 0
+    },
+    {
+      "name": "apple formats / an iPhone-style HEIC opens as sRGB, exactly as the same JPEG does",
+      "passed": 11,
+      "failed": 0,
+      "ms": 253
+    },
+    {
+      "name": "apple formats / HEIC transparency survives",
+      "passed": 3,
+      "failed": 0,
+      "ms": 15
+    },
+    {
+      "name": "apple formats / a muxed HEIC grid decodes in a real decoder",
+      "passed": 11,
+      "failed": 0,
+      "ms": 21
+    },
+    {
+      "name": "apple formats / the HEIC encoder converts colour the way it declares",
+      "passed": 8,
+      "failed": 0,
+      "ms": 0
+    },
+    {
+      "name": "apple formats / HEIC export works, or says why it cannot",
+      "passed": 5,
+      "failed": 0,
+      "ms": 84
+    },
+    {
+      "name": "apple formats / ICNS round-trips, and never upscales",
+      "passed": 11,
+      "failed": 0,
+      "ms": 339
+    },
+    {
+      "name": "apple formats / pre-Lion RLE icons still open",
+      "passed": 7,
+      "failed": 0,
+      "ms": 1
+    },
+    {
+      "name": "ai / planFrame contains the selection and stays in the document",
+      "passed": 24,
+      "failed": 0,
+      "ms": 0
+    },
+    {
+      "name": "ai / planFrame grows for free rather than upscaling",
+      "passed": 6,
+      "failed": 0,
+      "ms": 0
+    },
+    {
+      "name": "ai / the frame round trip is invertible",
+      "passed": 4,
+      "failed": 0,
+      "ms": 29
+    },
+    {
+      "name": "ai / mask polarity and the two deliberate asymmetries",
+      "passed": 7,
+      "failed": 0,
+      "ms": 7
+    },
+    {
+      "name": "ai / every failure says what it is and what to do",
+      "passed": 45,
+      "failed": 0,
+      "ms": 1
+    },
+    {
+      "name": "ai / the OpenAI adapter reads real response shapes",
+      "passed": 3,
+      "failed": 0,
+      "ms": 0
+    },
+    {
+      "name": "ai / a generation lands as one masked layer and one undo step",
+      "passed": 13,
+      "failed": 0,
+      "ms": 94
+    },
+    {
+      "name": "ai / a generation that cannot be trusted commits nothing",
+      "passed": 8,
+      "failed": 0,
+      "ms": 89
+    },
+    {
+      "name": "ai / nothing is sent without a key and without consent",
+      "passed": 5,
+      "failed": 0,
+      "ms": 55
+    },
+    {
+      "name": "ai / layer names stay readable",
+      "passed": 4,
+      "failed": 0,
+      "ms": 0
+    },
+    {
+      "name": "ai / providers stay isolated from Pikado",
+      "passed": 22,
+      "failed": 0,
+      "ms": 0
+    },
+    {
+      "name": "ai / every model a provider offers is one it could actually call",
+      "passed": 30,
+      "failed": 0,
+      "ms": 1
+    },
+    {
+      "name": "ai / the chosen model and effort reach the provider",
+      "passed": 2,
+      "failed": 0,
+      "ms": 8
+    },
+    {
+      "name": "ai / a model is a preference and a key is still not",
+      "passed": 6,
+      "failed": 0,
+      "ms": 27
+    },
+    {
+      "name": "ai / the test double is not offered to real users",
+      "passed": 5,
+      "failed": 0,
+      "ms": 1
+    },
+    {
+      "name": "ai credentials / the key never reaches a saved document",
+      "passed": 3,
+      "failed": 0,
+      "ms": 32
+    },
+    {
+      "name": "ai credentials / nothing is written to disk by default",
+      "passed": 5,
+      "failed": 0,
+      "ms": 26
+    },
+    {
+      "name": "ai credentials / forgetting actually forgets",
+      "passed": 6,
+      "failed": 0,
+      "ms": 3
+    },
+    {
+      "name": "ai credentials / redaction never reveals the key",
+      "passed": 18,
+      "failed": 0,
+      "ms": 2
+    },
+    {
+      "name": "ai credentials / a leaked key is scrubbed on its way to the screen",
+      "passed": 4,
+      "failed": 0,
+      "ms": 1
+    },
+    {
+      "name": "ai credentials / the key leaves only in a header",
+      "passed": 10,
+      "failed": 0,
+      "ms": 2
+    },
+    {
+      "name": "ai credentials / authorizeRequest is the only way out",
+      "passed": 2,
+      "failed": 0,
+      "ms": 16
+    },
+    {
+      "name": "ai credentials / hasCredential stays synchronous",
+      "passed": 3,
+      "failed": 0,
+      "ms": 1
+    },
+    {
+      "name": "ai credentials / one provider's key never reaches another",
+      "passed": 11,
+      "failed": 0,
+      "ms": 14
+    },
+    {
+      "name": "ai credentials / Gemini authenticates by header, not query string",
+      "passed": 12,
+      "failed": 0,
+      "ms": 1
+    },
+    {
+      "name": "ai credentials / the chosen model and quality reach the wire, and nothing else does",
+      "passed": 7,
+      "failed": 0,
+      "ms": 1
+    },
+    {
+      "name": "ai credentials / Gemini carries the model in the path and thinks only where it can",
+      "passed": 6,
+      "failed": 0,
+      "ms": 7
+    },
+    {
+      "name": "ai credentials / a remembered key comes back, and only once",
+      "passed": 4,
+      "failed": 0,
+      "ms": 7
+    },
+    {
+      "name": "perf / 3 MP composite with native and non-native blend modes",
+      "passed": 11,
+      "failed": 0,
+      "ms": 574
+    },
+    {
+      "name": "perf / gaussian blur is radius-independent on 3 MP",
+      "passed": 16,
+      "failed": 0,
+      "ms": 361
+    },
+    {
+      "name": "perf / layer effects stay cropped to the layer content",
+      "passed": 7,
+      "failed": 0,
+      "ms": 466
+    },
+    {
+      "name": "perf / one brush frame on a 3 MP layer",
+      "passed": 7,
+      "failed": 0,
+      "ms": 42
+    },
+    {
+      "name": "perf / copy-on-write beginEdit on a 3 MP layer",
+      "passed": 6,
+      "failed": 0,
+      "ms": 70
+    },
+    {
+      "name": "perf / Canvas2D filter support and edge clamping",
+      "passed": 4,
+      "failed": 0,
+      "ms": 13
+    }
+  ]
+}
