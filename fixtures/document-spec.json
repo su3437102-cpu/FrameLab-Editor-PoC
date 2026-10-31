@@ -1,0 +1,45 @@
+{
+  "schema": "test-spec-only-not-editor-format",
+  "width": 3240,
+  "height": 3240,
+  "cellSize": 1080,
+  "colorSpace": "sRGB",
+  "objects": [
+    {
+      "id": "continuous-image",
+      "asset": "grid-3240.png",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "alpha",
+      "asset": "alpha-circle.png",
+      "x": 900,
+      "y": 900
+    },
+    {
+      "id": "curve",
+      "anchors": [
+        [
+          900,
+          900
+        ],
+        [
+          2300,
+          2100
+        ]
+      ],
+      "handles": [
+        [
+          1100,
+          400
+        ],
+        [
+          1700,
+          2700
+        ]
+      ]
+    }
+  ],
+  "mask": "mask-gradient.png"
+}
