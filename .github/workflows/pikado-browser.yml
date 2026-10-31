@@ -1,0 +1,40 @@
+name: Pikado browser evidence
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/pikado-browser.yml'
+      - 'scripts/run-pikado-browser.cjs'
+permissions:
+  contents: read
+jobs:
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Fetch exact candidate revision
+        run: |
+          mkdir -p repos
+          git clone https://github.com/koneb71/pikado.git repos/pikado
+          git -C repos/pikado checkout --detach 29f6d8902a91f089edc8b327ab311ffa44859023
+          test "$(git -C repos/pikado rev-parse HEAD)" = 29f6d8902a91f089edc8b327ab311ffa44859023
+      - name: Build and install browser
+        run: |
+          mkdir -p evidence/browser
+          node --version > evidence/browser/environment.txt
+          (cd repos/pikado && npm ci --ignore-scripts --no-audit --no-fund && npm run build) 2>&1 | tee evidence/browser/build.log
+          npm install --no-save --ignore-scripts playwright@1.58.2
+          npx playwright install --with-deps chromium
+      - name: Run browser and upstream suites
+        run: node scripts/run-pikado-browser.cjs
+      - name: Preserve evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pikado-browser-evidence
+          path: evidence/browser/
+          retention-days: 30
