@@ -1,0 +1,76 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> pikado@1.0.0 build
+> vite build
+
+vite v8.1.5 building client environment for production...
+[2Ktransforming...✓ 194 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                  7.06 kB │ gzip:   2.60 kB
+dist/assets/libheif-bundle-DkbPxFSp.js       2,043.95 kB
+dist/assets/ai-guide-DauHY_Tj.css                0.71 kB │ gzip:   0.35 kB
+dist/assets/generative-fill-CEvUsXGE.css         0.90 kB │ gzip:   0.44 kB
+dist/assets/select-and-mask-zLsBnuM1.css         1.33 kB │ gzip:   0.62 kB
+dist/assets/fonts-DSysu73w.css                   2.14 kB │ gzip:   0.78 kB
+dist/assets/styles-dialog-B3kGY1YU.css           3.05 kB │ gzip:   1.04 kB
+dist/assets/dialogs-Dr-tI7OA.css                 8.51 kB │ gzip:   1.94 kB
+dist/assets/index-D7V5pqDw.css                  75.35 kB │ gzip:  13.40 kB
+dist/assets/rolldown-runtime-DK3Fl9T5.js         0.15 kB │ gzip:   0.15 kB
+dist/assets/providers-BK0YIA07.js                0.80 kB │ gzip:   0.39 kB
+dist/assets/preload-helper-HclGiUj8.js           1.21 kB │ gzip:   0.67 kB
+dist/assets/mock-B1WBOYon.js                     1.42 kB │ gzip:   0.85 kB
+dist/assets/credentials-BLqHndSL.js              1.94 kB │ gzip:   0.95 kB
+dist/assets/smart-object-CQEfsVtk.js             2.24 kB │ gzip:   1.06 kB
+dist/assets/geometry-BCL-_qnu.js                 2.26 kB │ gzip:   1.10 kB
+dist/assets/openai-_FF7RNYc.js                   2.31 kB │ gzip:   1.18 kB
+dist/assets/brand-Bm6vVU8E.js                    2.44 kB │ gzip:   0.98 kB
+dist/assets/errors-CCWXXRLu.js                   3.10 kB │ gzip:   1.34 kB
+dist/assets/util-CkTmvBPu.js                     3.14 kB │ gzip:   1.44 kB
+dist/assets/gemini-CPizBYmN.js                   3.40 kB │ gzip:   1.77 kB
+dist/assets/color-settings-BeCDsi7w.js           3.58 kB │ gzip:   1.49 kB
+dist/assets/color-CEHj1iRs.js                    4.16 kB │ gzip:   1.72 kB
+dist/assets/ai-guide-BAHcasaY.js                 4.45 kB │ gzip:   2.07 kB
+dist/assets/ai-key-CDxlD_s8.js                   4.58 kB │ gzip:   2.11 kB
+dist/assets/patterns-ZRI3-jGn.js                 7.16 kB │ gzip:   3.08 kB
+dist/assets/selection-uJOQ2NOk.js                7.27 kB │ gzip:   2.49 kB
+dist/assets/generative-fill-CEZaku_N.js          7.38 kB │ gzip:   3.30 kB
+dist/assets/app-CaETrcXQ.js                      7.53 kB │ gzip:   2.69 kB
+dist/assets/layer-BRoLr58I.js                    7.64 kB │ gzip:   2.58 kB
+dist/assets/fonts-BC8Fa4d2.js                    8.82 kB │ gzip:   3.84 kB
+dist/assets/dialog-MkeEAFb0.js                   9.27 kB │ gzip:   3.27 kB
+dist/assets/icons-CMNuMfYX.js                   10.37 kB │ gzip:   3.52 kB
+dist/assets/styles-dialog-Ceza2lTs.js           11.17 kB │ gzip:   3.99 kB
+dist/assets/document-BSYEJPsw.js                11.86 kB │ gzip:   3.67 kB
+dist/assets/fonts-Dv8bLoq5.js                   12.43 kB │ gzip:   4.25 kB
+dist/assets/compositor-CHQR9cN2.js              12.51 kB │ gzip:   4.96 kB
+dist/assets/styles-CqxF7VMk.js                  13.71 kB │ gzip:   5.09 kB
+dist/assets/select-and-mask-rK2hvN-u.js         27.03 kB │ gzip:  10.34 kB
+dist/assets/google-catalog.data-TsewoolA.js     60.91 kB │ gzip:  15.36 kB
+dist/assets/index-D15LCEcz.js                  910.07 kB │ gzip: 293.74 kB
+
+[33m[INEFFECTIVE_DYNAMIC_IMPORT] [0msrc/text/text-render.js is dynamically imported by src/color/manage.js, src/commands/definitions.js, src/main.js, src/ui/panels/character.js, src/ui/panels/properties.js but also statically imported by src/commands/definitions.js, src/io/psd-read.js, src/io/psd-write.js, src/layers/ops.js, src/tools/type.js, dynamic import will not move module into another chunk.
+
+[33m[INEFFECTIVE_DYNAMIC_IMPORT] [0msrc/text/font-manager.js is dynamically imported by src/main.js, src/text/fonts.js but also statically imported by src/io/psd-read.js, src/ui/dialogs/fonts.js, dynamic import will not move module into another chunk.
+
+[33m[INEFFECTIVE_DYNAMIC_IMPORT] [0msrc/vector/path.js is dynamically imported by src/color/manage.js, src/ui/panels/properties.js but also statically imported by src/commands/definitions.js, src/io/psd-read.js, src/io/psd-write.js, src/layers/ops.js, src/tools/path-select.js, ..., dynamic import will not move module into another chunk.
+
+[33m[INEFFECTIVE_DYNAMIC_IMPORT] [0msrc/core/smart.js is dynamically imported by src/color/manage.js, src/commands/definitions.js, src/filters/run.js, src/main.js but also statically imported by src/commands/definitions.js, src/layers/ops.js, src/tools/transform.js, src/ui/dialogs/smart-object.js, src/ui/panels/layers.js, ..., dynamic import will not move module into another chunk.
+
+[33m[INEFFECTIVE_DYNAMIC_IMPORT] [0msrc/tools/transform.js is dynamically imported by src/ui/options-bar.js but also statically imported by src/commands/definitions.js, src/tools/move.js, dynamic import will not move module into another chunk.
+
+[33m[INEFFECTIVE_DYNAMIC_IMPORT] [0msrc/tools/type.js is dynamically imported by src/tools/move.js but also statically imported by src/main.js, dynamic import will not move module into another chunk.
+
+[33m[INEFFECTIVE_DYNAMIC_IMPORT] [0msrc/tools/shape.js is dynamically imported by src/ui/panels/properties.js but also statically imported by src/main.js, dynamic import will not move module into another chunk.
+
+[33m[INEFFECTIVE_DYNAMIC_IMPORT] [0msrc/color/manage.js is dynamically imported by src/commands/definitions.js, src/io/open.js but also statically imported by src/main.js, src/ui/dialogs/color-settings.js, dynamic import will not move module into another chunk.
+
+[33m[INEFFECTIVE_DYNAMIC_IMPORT] [0msrc/ui/color-picker.js is dynamically imported by src/ui/toolbar.js but also statically imported by src/commands/definitions.js, src/ui/panels/character.js, src/ui/panels/color.js, dynamic import will not move module into another chunk.
+
+[33m[INEFFECTIVE_DYNAMIC_IMPORT] [0msrc/io/save.js is dynamically imported by src/ui/dialogs/export.js but also statically imported by src/commands/definitions.js, dynamic import will not move module into another chunk.
+
+[33m[INEFFECTIVE_DYNAMIC_IMPORT] [0msrc/ui/dialogs/new-document.js is dynamically imported by src/ui/tabbar.js, src/ui/welcome.js but also statically imported by src/commands/definitions.js, src/ui/dialogs/canvas-size.js, src/ui/dialogs/image-size.js, dynamic import will not move module into another chunk.
+
+[33m[INEFFECTIVE_DYNAMIC_IMPORT] [0msrc/commands/definitions.js is dynamically imported by src/ui/menubar.js but also statically imported by src/main.js, dynamic import will not move module into another chunk.
+
+✓ built in 355ms
