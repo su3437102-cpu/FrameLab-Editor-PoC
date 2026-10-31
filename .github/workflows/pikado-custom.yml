@@ -1,0 +1,37 @@
+name: Pikado 3240 isolated probes
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - .github/workflows/pikado-custom.yml
+      - scripts/pikado-custom-browser.cjs
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Install pinned project and browser
+        run: |
+          mkdir -p repos
+          git clone https://github.com/koneb71/pikado.git repos/pikado
+          git -C repos/pikado checkout --detach 29f6d8902a91f089edc8b327ab311ffa44859023
+          cd repos/pikado
+          npm ci --ignore-scripts --no-audit --no-fund
+          cd ../..
+          npm install --no-save --ignore-scripts playwright@1.58.2
+          npx playwright install --with-deps chromium
+      - name: Run custom probes
+        run: node scripts/pikado-custom-browser.cjs
+      - name: Preserve evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pikado-custom-evidence
+          path: evidence/custom/
+          retention-days: 30
