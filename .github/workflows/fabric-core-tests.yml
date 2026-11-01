@@ -1,0 +1,25 @@
+name: Fabric Photo core tests
+on:
+  workflow_dispatch:
+  push:
+    paths: ['.github/workflows/fabric-core-tests.yml']
+permissions:
+  contents: read
+jobs:
+  core:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install fixed revision
+        run: |
+          git clone https://github.com/ximing/fabric-photo.git candidate
+          git -C candidate checkout --detach 6d5a06b56a353334923d6b127a66186e36f1e693
+          corepack enable
+          corepack prepare pnpm@10.33.0 --activate
+          cd candidate
+          pnpm install --frozen-lockfile
+      - name: Execute core tests
+        run: cd candidate && pnpm --filter @gmi/fp-core test
