@@ -1,0 +1,63 @@
+name: Candidate build validation
+on:
+  workflow_dispatch:
+  push:
+    paths: ['.github/workflows/candidate-build.yml']
+permissions:
+  contents: read
+jobs:
+  javascript:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: miniPaint
+            repo: viliusle/miniPaint
+            sha: a79733eb803fc97084ef0ee4faa96b031e69e1c0
+          - name: fabritor-web
+            repo: sleepy-zone/fabritor-web
+            sha: af35a0118362dbbce5036c759ade0d34aec3ff08
+          - name: fabric-photo
+            repo: ximing/fabric-photo
+            sha: 6d5a06b56a353334923d6b127a66186e36f1e693
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Checkout fixed revision
+        run: |
+          git clone "https://github.com/${{ matrix.repo }}.git" candidate
+          git -C candidate checkout --detach "${{ matrix.sha }}"
+          test "$(git -C candidate rev-parse HEAD)" = "${{ matrix.sha }}"
+      - name: Install and build
+        shell: bash
+        run: |
+          set -o pipefail
+          mkdir -p evidence
+          cd candidate
+          case "${{ matrix.name }}" in
+            miniPaint) npm ci --no-audit --no-fund && npm run build ;;
+            fabritor-web) corepack enable && yarn install --frozen-lockfile && yarn build ;;
+            fabric-photo) corepack enable && corepack prepare pnpm@10.33.0 --activate && pnpm install --frozen-lockfile && pnpm build ;;
+          esac 2>&1 | tee ../evidence/build.log
+      - name: Preserve logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-${{ matrix.name }}
+          path: evidence/
+          if-no-files-found: ignore
+          retention-days: 30
+  photocraft:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: storytold/photocraft
+          ref: 422ca7beda90d927643bcd074646ebbd37706d75
+      - uses: dtolnay/rust-toolchain@stable
+      - name: Test PSD crate
+        run: cargo test --locked -p photocraft-psd
