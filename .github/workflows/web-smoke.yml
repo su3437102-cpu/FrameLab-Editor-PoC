@@ -1,0 +1,59 @@
+name: Remaining web editor startup
+on:
+  workflow_dispatch:
+  push:
+    paths: ['.github/workflows/web-smoke.yml']
+permissions:
+  contents: read
+jobs:
+  smoke:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: miniPaint
+            repo: viliusle/miniPaint
+            sha: a79733eb803fc97084ef0ee4faa96b031e69e1c0
+          - name: fabritor-web
+            repo: sleepy-zone/fabritor-web
+            sha: af35a0118362dbbce5036c759ade0d34aec3ff08
+          - name: fabric-photo
+            repo: ximing/fabric-photo
+            sha: 6d5a06b56a353334923d6b127a66186e36f1e693
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Build candidate
+        run: |
+          git clone https://github.com/${{ matrix.repo }}.git candidate
+          git -C candidate checkout --detach ${{ matrix.sha }}
+          corepack enable
+          cd candidate
+          case "${{ matrix.name }}" in
+            miniPaint) npm ci --no-audit --no-fund && npm run build ;;
+            fabritor-web) yarn install --frozen-lockfile && yarn build ;;
+            fabric-photo) corepack prepare pnpm@10.33.0 --activate && pnpm install --frozen-lockfile && pnpm build:demo ;;
+          esac
+      - name: Browser startup evidence
+        run: |
+          npm install --no-save --ignore-scripts playwright@1.58.2
+          npx playwright install --with-deps chromium
+          case "${{ matrix.name }}" in
+            miniPaint) export SERVE_DIR=candidate ;;
+            fabritor-web) export SERVE_DIR=candidate/build ;;
+            fabric-photo) export SERVE_DIR=candidate/dist-demo ;;
+          esac
+          python3 -m http.server 8080 --directory "$SERVE_DIR" > server.log 2>&1 &
+          node scripts/smoke-browser.cjs
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: startup-${{ matrix.name }}
+          path: |
+            evidence/browser/
+            server.log
+          retention-days: 30
