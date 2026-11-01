@@ -45,7 +45,7 @@ jobs:
           case "${{ matrix.name }}" in
             miniPaint) export SERVE_DIR=candidate ;;
             fabritor-web) export SERVE_DIR=candidate/build ;;
-            fabric-photo) export SERVE_DIR=candidate/dist-demo ;;
+            fabric-photo) ln -s . candidate/dist-demo/fabric-photo; export SERVE_DIR=candidate/dist-demo ;;
           esac
           python3 -m http.server 8080 --directory "$SERVE_DIR" > server.log 2>&1 &
           node scripts/smoke-browser.cjs
